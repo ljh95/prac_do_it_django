@@ -6,7 +6,7 @@
 <body>
     Blog
 
-    {% for p in posts %}
+    {% for p in post_list %}
         <h2><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></h2>
         <h4>{{ p.content }}</h4>
         <p>{{ p.created_at }}</p>
